@@ -7,6 +7,12 @@ import Card from './components/Card'
 import Parent from './components/Parent'
 import State from './components/State'
 import AnimalList from './components/Animal'
+import InputFocus from './components/InputFocus'
+import RenderCounter from './components/RenderCount'
+import ExpensiveCalc from './components/ExpensiveCalc'
+import TodoApp from './components/TodoApp'
+import Counter from './components/Counter'
+import PaginationDemo from './components/PaginationDemo'
 function App() {
 
 
@@ -63,6 +69,16 @@ function App() {
       <State/>
       <Parent/>
       <AnimalList/>
+      <InputFocus/>
+      <RenderCounter/>
+
+      <ExpensiveCalc/>
+
+      <TodoApp/>
+
+      <Counter/>
+
+      <PaginationDemo/>
       </>
   )
 }
