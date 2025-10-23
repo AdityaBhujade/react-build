@@ -10,7 +10,8 @@ export default function Parent() {
       <h2 className="text-xl font-bold mb-3">Parent Component</h2>
       <p>Count: {count}</p>
       <button
-        onClick={() => setCount(count + 1)}
+        onClick={() => 
+          setCount(count + 1)}
         className="bg-blue-500 text-white px-4 py-2 rounded"
       >
         Increase Count

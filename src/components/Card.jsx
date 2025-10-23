@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-function Card({img,name,info}) {
+function Card({img,name}) {
   return (
     <div className='card w-[270px] border border-gray-200 text-center overflow-hidden p-6 rounded-lg shadow-xl m-10'>
             <img className='w-[100%] h-[200px] object-cover rounded-lg ' src={img} alt="profile pic"/>

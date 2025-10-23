@@ -3,11 +3,12 @@ import Button from './components/Button'
 import Alert from './components/Alert'
 import Card from './components/Card'  
 import Parent from './components/Parent'
+import State from './components/State'
 function App() {
   
 const actresses = [
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/8/89/Scarlett_Johansson_in_Kuwait_01b-tweaked.jpg",
+    img: "https://cdn.britannica.com/59/182359-050-C6F38CA3/Scarlett-Johansson-Natasha-Romanoff-Avengers-Age-of.jpg",
     name: "Scarlett Johansson",
   },
   {
@@ -15,51 +16,17 @@ const actresses = [
     name: "Ana de Armas",
   },
   {
-    img: "https://commons.wikimedia.org/wiki/File%3AJodie_comer_2023_5.jpg?uselang=en", 
-    name: "Jodie Comer",
-    
-  },
-  {
-    img: "https://commons.wikimedia.org/wiki/File:Bella_Hadid_Cannes_2018.jpg", 
-    name: "Bella Hadid",
-  
-  },
-  {
-    img: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Zendaya_2019.jpg", 
-    name: "Zendaya",
-  },
-  {
-    img: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Deepika_Padukone_2018.jpg", 
-    name: "Deepika Padukone",
-   
-  },
-  {
-    img: "https://upload.wikimedia.org/wikipedia/commons/5/54/Emma_Watson_2017.jpg", 
-    name: "Emma Watson",
- 
-  },
-  {
-    img: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Margot_Robbie_in_2019.jpg", 
-    name: "Margot Robbie",
-    
-  },
-  {
-    img: "https://upload.wikimedia.org/wikipedia/commons/2/28/Ariana_Grande_2019_%28cropped%29.jpg", 
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDEvfwWV3GoKVciDbtnYsVId3vmdmyGDJ0ZA&s", 
     name: "Ariana Grande",
     
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/3/32/Beyonce_2021_%28cropped%29.jpg", 
-    name: "Beyoncé",
-   
-  },
-  {
-    img: "https://upload.wikimedia.org/wikipedia/commons/9/95/Taylor_Swift_GMA_2019.jpg", 
+    img: "https://variety.com/wp-content/uploads/2025/10/GettyImages-2197310482.jpg?w=1000&h=667&crop=1", 
     name: "Taylor Swift",
    
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Kriti_Sanon_promotional.jpg", 
+    img: "https://in.bmscdn.com/iedb/artist/images/website/poster/large/kriti-sanon-37438-15-09-2017-03-51-03.jpg", 
     name: "Kriti Sanon",
    
   }
@@ -67,13 +34,16 @@ const actresses = [
 
   return (
     <>
-      {/* <Button/>
+      <Button/>
       <Alert/>
-      {
+      <div className='flex flex-wrap shrink-0'>
+        {
         actresses.map((actress)=>{
           return <Card img={actress.img} name={actress.name}/>
         })
-      } */}
+      }
+      </div>
+      <State/>
       <Parent/>
       </>
   )

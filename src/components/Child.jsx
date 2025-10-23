@@ -3,7 +3,7 @@ import React from "react";
 function Child({ name }) {
   console.log("🧒 Child Rendered");
   return (
-    <div className="mt-4 bg-gray-100 p-3 rounded shadow">
+    <div className="mt-4 bg-gray-100 p-3 rounded shadow w-[400px] text-center">
       <p>Child Component — Name: {name}</p>
     </div>
   );

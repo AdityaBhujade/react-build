@@ -14,7 +14,6 @@ function Button() {
         onClick={() => {
           setFollowed(true);
           setTimeout(() => setFollowed(false), 2000);
-          console.log("mounted");
         }}
       >
         {followed ? "Following" : "Follow"}
