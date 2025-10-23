@@ -1,8 +1,13 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Alert() {
     const [showAlert, setShowAlert] = useState(false);
+    useEffect(() => {
+  console.log("Component mounted!");
+}, []);
+
+    
   return (
     <div>
         <div className="relative m-10">
